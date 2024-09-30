@@ -1,7 +1,0 @@
-sudo: required
-services:
-- docker
-before_install:
-- docker buiid -t tagmon/docker-react -f Dockerfile.dev .
-script:
-- docker run -e CI=true tagmon/docker-react npm run test
